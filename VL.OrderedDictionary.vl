@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="NEx7RdH2g1RLmN1TVItuZY" LanguageVersion="2020.1.7.184" Version="0.128">
+  <NugetDependency Id="Lkm1OcFwQLNLdTa0l12umA" Location="VL.CoreLib" Version="2020.1.7" />
+  <Patch Id="SSke7suVSKZLYORWDxJqPH">
+    <Canvas Id="E8dvXXWowEVNtUq5Nhpusm" DefaultCategory="Collections" CanvasType="FullCategory">
+      <!--
+
+    ************************ OrderedDictionary ************************
+
+-->
+      <Node Name="OrderedDictionary" Bounds="305,143" Id="Ol8AJCnIuvDLENUx05HVVq">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="OD.Collections.Generic" LastSymbolSource="OrderedDictionary.dll">
+          <Choice Kind="TypeFlag" Name="OrderedDictionary`2" />
+        </p:TypeAnnotation>
+        <Patch Id="E5pwlAJXOgyNY6p9Kc2mo7">
+          <Canvas Id="NVGQWJAdJwNP68vsM8CKeb" CanvasType="Group">
+            <!--
+
+    ************************ Values ************************
+
+-->
+            <Node Name="Values" Bounds="318,189,115,147" Id="Mlo7sXn4meWMJf8XM9uJBY">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="BsSDD0E1frRNYKqjk7m50L" IsGeneric="true">
+                <Node Bounds="330,212,91,26" AutoConnect="true" Id="FBeQ8rCLtuDLSY21CJrAl3">
+                  <p:NodeReference LastCategoryFullName="OD.Collections.Generic.OrderedDictionary`2" LastSymbolSource="OrderedDictionary.dll">
+                    <Choice Kind="OperationNode" Name="Values" />
+                    <FullNameCategoryReference ID="OD.Collections.Generic.OrderedDictionary`2" />
+                  </p:NodeReference>
+                  <Pin Id="O3TTfzAlFeyMblItqi1fQr" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="JG6zUkn62PsPlx2YKXqIir" Name="Values" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="330,263,83,26" AutoConnect="true" Id="RUjccicQPANLRU2Vhu2lHr">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="DVLqT52EOVZPRmBjTzw6TS" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="VH2tzK5GZnWPWTGEIQwBYB" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="Uzo2JPVKcapQR58K1DImK9" Ids="JG6zUkn62PsPlx2YKXqIir,DVLqT52EOVZPRmBjTzw6TS" />
+                <ControlPoint Id="Bmgh42QYzKWM6q6bzpqoL2" Bounds="332,319" />
+                <Link Id="JzfaV8BVcbfMZJs0C7bkYR" Ids="VH2tzK5GZnWPWTGEIQwBYB,Bmgh42QYzKWM6q6bzpqoL2" />
+                <Link Id="Tzi0kJv4IEaLNv65konudZ" Ids="Bmgh42QYzKWM6q6bzpqoL2,THtiwgq3Ol0M0mltWRJCOm" IsHidden="true" />
+                <Pin Id="RDtNlrhtiwRMjeuB5Ung4F" Name="Input" Kind="InputPin" />
+                <Pin Id="THtiwgq3Ol0M0mltWRJCOm" Name="Values" Kind="OutputPin" Bounds="361,343" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Keys ************************
+
+-->
+            <Node Name="Keys" Bounds="463,188,115,146" Id="EOQsDiIqwohMZUGQlbLwEN">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="RchCKf7j9VDMjbusIJtEr9" IsGeneric="true">
+                <Node Bounds="475,211,91,26" AutoConnect="true" Id="B5nv86Jnq53PA9glQO1BxO">
+                  <p:NodeReference LastCategoryFullName="OD.Collections.Generic.OrderedDictionary`2" LastSymbolSource="OrderedDictionary.dll">
+                    <Choice Kind="OperationNode" Name="Keys" />
+                    <FullNameCategoryReference ID="OD.Collections.Generic.OrderedDictionary`2" />
+                  </p:NodeReference>
+                  <Pin Id="EBFMX6jSd8uQFD3vj7XaG1" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="FWXcj984XgEMuflkIJbuwq" Name="Keys" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="475,262,83,26" AutoConnect="true" Id="IsnVVZhNea2QRk08KOB1bu">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="FM6GrF0srXKQSKW1YzV3Xd" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="KDMVoznhvMXLbQAWWXLsXo" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="BmyaTt6ChU6QItns7QTiuW" Name="Input" Kind="InputPin" />
+                <Link Id="E3xRA3uAKTMLMdtwvMaidb" Ids="FWXcj984XgEMuflkIJbuwq,FM6GrF0srXKQSKW1YzV3Xd" />
+                <ControlPoint Id="TISUJF8Za69MnHPET2K2Hs" Bounds="477,317" />
+                <Link Id="CfkBu1GBntNNPPXJ395use" Ids="KDMVoznhvMXLbQAWWXLsXo,TISUJF8Za69MnHPET2K2Hs" />
+                <Pin Id="LQ1JwgpvhNNLeYU4W4Qn9l" Name="Keys" Kind="OutputPin" Bounds="559,285" />
+                <Link Id="HB5JM5JGbQ9M7lq6Iz9F9T" Ids="TISUJF8Za69MnHPET2K2Hs,LQ1JwgpvhNNLeYU4W4Qn9l" IsHidden="true" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="TXbj3364yqSLlKUbx3VamQ" IsHidden="true">
+            <Fragment Id="RKFohytjh12QQu3HO2DCMs" Patch="Mlo7sXn4meWMJf8XM9uJBY" />
+            <Fragment Id="Kqo9hIcjOwNNCHcde4sNy2" Patch="EOQsDiIqwohMZUGQlbLwEN" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="QFY2xh6skqsPZRwUAnbFSq">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="R7zaUXNVIHpNYRoWYSpv43">
+        <Canvas Id="ViXo0TaISc2OVw4CuZDx1j" CanvasType="Group" />
+        <Patch Id="NVZpawBuxxNPnnaU1OPhLf" Name="Create" />
+        <Patch Id="DH7blGOyfOaLNdHsUwhRqe" Name="Update" />
+        <ProcessDefinition Id="I00FU6WGYeuQZMKQKtcPal">
+          <Fragment Id="M6WvjFyfa2GMvVqy2vp5d6" Patch="NVZpawBuxxNPnnaU1OPhLf" Enabled="true" />
+          <Fragment Id="SUeTKdrCHZXPm9JRYIFwaF" Patch="DH7blGOyfOaLNdHsUwhRqe" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="BjFHZvVtfMWQIJmViViApW" Location="./Lib/netstandard2.0/OrderedDictionary.dll" />
+</Document>
