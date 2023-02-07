@@ -1,3 +1,5 @@
+This is now part of [VL.Addons](https://github.com/bj-rn/VL.Addons).
+
 # VL.OrderedDictionary
 
 A generic OrderedDictionary for VL
